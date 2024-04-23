@@ -1,4 +1,4 @@
-module gitlab.pasqal.com/pcs/go-slurm-client
+module github.com/pasqal-io/go-slurm-client
 
 go 1.18
 

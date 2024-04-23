@@ -13,9 +13,9 @@ import (
 	"context"
 	"testing"
 
+	openapiclient "github.com/pasqal-io/go-slurm-client"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	openapiclient "gitlab.pasqal.com/pcs/go-slurm-client"
 )
 
 func Test_slurmclient_OpenapiAPIService(t *testing.T) {
