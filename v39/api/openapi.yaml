@@ -2725,7 +2725,7 @@ components:
           type: integer
         step_id:
           description: new job step ID
-          type: string
+          type: integer
         job_submit_user_msg:
           description: Message to user from job_submit plugin
           type: string

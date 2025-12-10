@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Errors** | Pointer to [**[]V0039Error**](V0039Error.md) | Slurm errors | [optional] 
 **Warnings** | Pointer to [**[]V0039Warning**](V0039Warning.md) | Slurm warnings | [optional] 
 **JobId** | Pointer to **int32** | new job ID | [optional] 
-**StepId** | Pointer to **string** | new job step ID | [optional] 
+**StepId** | Pointer to **int32** | new job step ID | [optional] 
 **JobSubmitUserMsg** | Pointer to **string** | Message to user from job_submit plugin | [optional] 
 
 ## Methods
@@ -132,20 +132,20 @@ HasJobId returns a boolean if a field has been set.
 
 ### GetStepId
 
-`func (o *V0039JobSubmissionResponse) GetStepId() string`
+`func (o *V0039JobSubmissionResponse) GetStepId() int32`
 
 GetStepId returns the StepId field if non-nil, zero value otherwise.
 
 ### GetStepIdOk
 
-`func (o *V0039JobSubmissionResponse) GetStepIdOk() (*string, bool)`
+`func (o *V0039JobSubmissionResponse) GetStepIdOk() (*int32, bool)`
 
 GetStepIdOk returns a tuple with the StepId field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStepId
 
-`func (o *V0039JobSubmissionResponse) SetStepId(v string)`
+`func (o *V0039JobSubmissionResponse) SetStepId(v int32)`
 
 SetStepId sets StepId field to given value.
 

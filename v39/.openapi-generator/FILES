@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -313,5 +312,4 @@ model_v0_0_39_warning.go
 model_v0_0_39_wckey.go
 model_v0_0_39_wckey_tag.go
 response.go
-test/api_slurm_test.go
 utils.go
