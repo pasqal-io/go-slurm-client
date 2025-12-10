@@ -1,4 +1,4 @@
-module github.com/GIT_USER_ID/GIT_REPO_ID
+module github.com/pasqal-io/go-slurm-client/v39
 
 go 1.23
 
