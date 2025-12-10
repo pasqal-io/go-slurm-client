@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 
@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer( "%5B", "[", "%5D", "]" )
 )
 
-// APIClient manages communication with the Slurm Rest API API vSlurm-23.11.11&amp;openapi/dbv0.0.39&amp;openapi/slurmctld&amp;openapi/v0.0.38&amp;openapi/slurmdbd&amp;openapi/v0.0.39&amp;openapi/dbv0.0.38
+// APIClient manages communication with the Slurm Rest API API v0.0.39
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	cfg    *Configuration
@@ -50,11 +50,7 @@ type APIClient struct {
 
 	// API Services
 
-	OpenapiAPI *OpenapiAPIService
-
 	SlurmAPI *SlurmAPIService
-
-	SlurmdbAPI *SlurmdbAPIService
 }
 
 type service struct {
@@ -73,9 +69,7 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	c.common.client = c
 
 	// API Services
-	c.OpenapiAPI = (*OpenapiAPIService)(&c.common)
 	c.SlurmAPI = (*SlurmAPIService)(&c.common)
-	c.SlurmdbAPI = (*SlurmdbAPIService)(&c.common)
 
 	return c
 }
@@ -424,11 +418,6 @@ func (c *APIClient) prepareRequest(
 		localVarRequest = localVarRequest.WithContext(ctx)
 
 		// Walk through any authentication.
-
-		// AccessToken Authentication
-		if auth, ok := ctx.Value(ContextAccessToken).(string); ok {
-			localVarRequest.Header.Add("Authorization", "Bearer "+auth)
-		}
 
 	}
 

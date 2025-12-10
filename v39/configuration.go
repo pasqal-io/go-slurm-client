@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 
@@ -29,9 +29,6 @@ func (c contextKey) String() string {
 }
 
 var (
-	// ContextAccessToken takes a string oauth2 access token as authentication for the request.
-	ContextAccessToken = contextKey("accesstoken")
-
 	// ContextAPIKeys takes a string apikey as authentication for the request
 	ContextAPIKeys = contextKey("apiKeys")
 
@@ -102,30 +99,6 @@ func NewConfiguration() *Configuration {
 			},
 		},
 		OperationServers: map[string]ServerConfigurations{
-			"OpenapiAPIService.OpenapiGet": {
-				{
-					URL: "/",
-					Description: "No description provided",
-				},
-			},
-			"OpenapiAPIService.OpenapiJsonGet": {
-				{
-					URL: "/",
-					Description: "No description provided",
-				},
-			},
-			"OpenapiAPIService.OpenapiV3Get": {
-				{
-					URL: "/",
-					Description: "No description provided",
-				},
-			},
-			"OpenapiAPIService.OpenapiYamlGet": {
-				{
-					URL: "/",
-					Description: "No description provided",
-				},
-			},
 		},
 	}
 	return cfg

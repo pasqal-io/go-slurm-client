@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 
@@ -65,9 +65,9 @@ type V0039StatsMsg struct {
 	BfWhenLastCycle *int64 `json:"bf_when_last_cycle,omitempty"`
 	BfActive *bool `json:"bf_active,omitempty"`
 	// RPCs by message type
-	RpcsByMessageType []V0040StatsMsgRpcsByTypeInner `json:"rpcs_by_message_type,omitempty"`
+	RpcsByMessageType []V0039StatsMsgRpcsByTypeInner `json:"rpcs_by_message_type,omitempty"`
 	// RPCs by user
-	RpcsByUser []V0040StatsMsgRpcsByUserInner `json:"rpcs_by_user,omitempty"`
+	RpcsByUser []V0039StatsMsgRpcsByUserInner `json:"rpcs_by_user,omitempty"`
 }
 
 // NewV0039StatsMsg instantiates a new V0039StatsMsg object
@@ -1496,9 +1496,9 @@ func (o *V0039StatsMsg) SetBfActive(v bool) {
 }
 
 // GetRpcsByMessageType returns the RpcsByMessageType field value if set, zero value otherwise.
-func (o *V0039StatsMsg) GetRpcsByMessageType() []V0040StatsMsgRpcsByTypeInner {
+func (o *V0039StatsMsg) GetRpcsByMessageType() []V0039StatsMsgRpcsByTypeInner {
 	if o == nil || IsNil(o.RpcsByMessageType) {
-		var ret []V0040StatsMsgRpcsByTypeInner
+		var ret []V0039StatsMsgRpcsByTypeInner
 		return ret
 	}
 	return o.RpcsByMessageType
@@ -1506,7 +1506,7 @@ func (o *V0039StatsMsg) GetRpcsByMessageType() []V0040StatsMsgRpcsByTypeInner {
 
 // GetRpcsByMessageTypeOk returns a tuple with the RpcsByMessageType field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039StatsMsg) GetRpcsByMessageTypeOk() ([]V0040StatsMsgRpcsByTypeInner, bool) {
+func (o *V0039StatsMsg) GetRpcsByMessageTypeOk() ([]V0039StatsMsgRpcsByTypeInner, bool) {
 	if o == nil || IsNil(o.RpcsByMessageType) {
 		return nil, false
 	}
@@ -1522,15 +1522,15 @@ func (o *V0039StatsMsg) HasRpcsByMessageType() bool {
 	return false
 }
 
-// SetRpcsByMessageType gets a reference to the given []V0040StatsMsgRpcsByTypeInner and assigns it to the RpcsByMessageType field.
-func (o *V0039StatsMsg) SetRpcsByMessageType(v []V0040StatsMsgRpcsByTypeInner) {
+// SetRpcsByMessageType gets a reference to the given []V0039StatsMsgRpcsByTypeInner and assigns it to the RpcsByMessageType field.
+func (o *V0039StatsMsg) SetRpcsByMessageType(v []V0039StatsMsgRpcsByTypeInner) {
 	o.RpcsByMessageType = v
 }
 
 // GetRpcsByUser returns the RpcsByUser field value if set, zero value otherwise.
-func (o *V0039StatsMsg) GetRpcsByUser() []V0040StatsMsgRpcsByUserInner {
+func (o *V0039StatsMsg) GetRpcsByUser() []V0039StatsMsgRpcsByUserInner {
 	if o == nil || IsNil(o.RpcsByUser) {
-		var ret []V0040StatsMsgRpcsByUserInner
+		var ret []V0039StatsMsgRpcsByUserInner
 		return ret
 	}
 	return o.RpcsByUser
@@ -1538,7 +1538,7 @@ func (o *V0039StatsMsg) GetRpcsByUser() []V0040StatsMsgRpcsByUserInner {
 
 // GetRpcsByUserOk returns a tuple with the RpcsByUser field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039StatsMsg) GetRpcsByUserOk() ([]V0040StatsMsgRpcsByUserInner, bool) {
+func (o *V0039StatsMsg) GetRpcsByUserOk() ([]V0039StatsMsgRpcsByUserInner, bool) {
 	if o == nil || IsNil(o.RpcsByUser) {
 		return nil, false
 	}
@@ -1554,8 +1554,8 @@ func (o *V0039StatsMsg) HasRpcsByUser() bool {
 	return false
 }
 
-// SetRpcsByUser gets a reference to the given []V0040StatsMsgRpcsByUserInner and assigns it to the RpcsByUser field.
-func (o *V0039StatsMsg) SetRpcsByUser(v []V0040StatsMsgRpcsByUserInner) {
+// SetRpcsByUser gets a reference to the given []V0039StatsMsgRpcsByUserInner and assigns it to the RpcsByUser field.
+func (o *V0039StatsMsg) SetRpcsByUser(v []V0039StatsMsgRpcsByUserInner) {
 	o.RpcsByUser = v
 }
 

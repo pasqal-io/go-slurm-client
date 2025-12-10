@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 
@@ -20,21 +20,21 @@ var _ MappedNullable = &V0039PartitionInfo{}
 
 // V0039PartitionInfo struct for V0039PartitionInfo
 type V0039PartitionInfo struct {
-	Nodes *V0040PartitionInfoNodes `json:"nodes,omitempty"`
-	Accounts *V0040PartitionInfoAccounts `json:"accounts,omitempty"`
-	Groups *V0040PartitionInfoGroups `json:"groups,omitempty"`
-	Qos *V0040PartitionInfoQos `json:"qos,omitempty"`
+	Nodes *V0039PartitionInfoNodes `json:"nodes,omitempty"`
+	Accounts *V0039PartitionInfoAccounts `json:"accounts,omitempty"`
+	Groups *V0039PartitionInfoGroups `json:"groups,omitempty"`
+	Qos *V0039PartitionInfoQos `json:"qos,omitempty"`
 	Alternate *string `json:"alternate,omitempty"`
-	Tres *V0040PartitionInfoTres `json:"tres,omitempty"`
+	Tres *V0039PartitionInfoTres `json:"tres,omitempty"`
 	Cluster *string `json:"cluster,omitempty"`
-	Cpus *V0040PartitionInfoCpus `json:"cpus,omitempty"`
+	Cpus *V0039PartitionInfoCpus `json:"cpus,omitempty"`
 	Defaults *V0039PartitionInfoDefaults `json:"defaults,omitempty"`
 	GraceTime *int32 `json:"grace_time,omitempty"`
 	Maximums *V0039PartitionInfoMaximums `json:"maximums,omitempty"`
-	Minimums *V0040PartitionInfoMinimums `json:"minimums,omitempty"`
+	Minimums *V0039PartitionInfoMinimums `json:"minimums,omitempty"`
 	Name *string `json:"name,omitempty"`
 	NodeSets *string `json:"node_sets,omitempty"`
-	Priority *V0040PartitionInfoPriority `json:"priority,omitempty"`
+	Priority *V0039PartitionInfoPriority `json:"priority,omitempty"`
 	Timeouts *V0039PartitionInfoTimeouts `json:"timeouts,omitempty"`
 	SuspendTime *V0039Uint32NoVal `json:"suspend_time,omitempty"`
 }
@@ -57,9 +57,9 @@ func NewV0039PartitionInfoWithDefaults() *V0039PartitionInfo {
 }
 
 // GetNodes returns the Nodes field value if set, zero value otherwise.
-func (o *V0039PartitionInfo) GetNodes() V0040PartitionInfoNodes {
+func (o *V0039PartitionInfo) GetNodes() V0039PartitionInfoNodes {
 	if o == nil || IsNil(o.Nodes) {
-		var ret V0040PartitionInfoNodes
+		var ret V0039PartitionInfoNodes
 		return ret
 	}
 	return *o.Nodes
@@ -67,7 +67,7 @@ func (o *V0039PartitionInfo) GetNodes() V0040PartitionInfoNodes {
 
 // GetNodesOk returns a tuple with the Nodes field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039PartitionInfo) GetNodesOk() (*V0040PartitionInfoNodes, bool) {
+func (o *V0039PartitionInfo) GetNodesOk() (*V0039PartitionInfoNodes, bool) {
 	if o == nil || IsNil(o.Nodes) {
 		return nil, false
 	}
@@ -83,15 +83,15 @@ func (o *V0039PartitionInfo) HasNodes() bool {
 	return false
 }
 
-// SetNodes gets a reference to the given V0040PartitionInfoNodes and assigns it to the Nodes field.
-func (o *V0039PartitionInfo) SetNodes(v V0040PartitionInfoNodes) {
+// SetNodes gets a reference to the given V0039PartitionInfoNodes and assigns it to the Nodes field.
+func (o *V0039PartitionInfo) SetNodes(v V0039PartitionInfoNodes) {
 	o.Nodes = &v
 }
 
 // GetAccounts returns the Accounts field value if set, zero value otherwise.
-func (o *V0039PartitionInfo) GetAccounts() V0040PartitionInfoAccounts {
+func (o *V0039PartitionInfo) GetAccounts() V0039PartitionInfoAccounts {
 	if o == nil || IsNil(o.Accounts) {
-		var ret V0040PartitionInfoAccounts
+		var ret V0039PartitionInfoAccounts
 		return ret
 	}
 	return *o.Accounts
@@ -99,7 +99,7 @@ func (o *V0039PartitionInfo) GetAccounts() V0040PartitionInfoAccounts {
 
 // GetAccountsOk returns a tuple with the Accounts field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039PartitionInfo) GetAccountsOk() (*V0040PartitionInfoAccounts, bool) {
+func (o *V0039PartitionInfo) GetAccountsOk() (*V0039PartitionInfoAccounts, bool) {
 	if o == nil || IsNil(o.Accounts) {
 		return nil, false
 	}
@@ -115,15 +115,15 @@ func (o *V0039PartitionInfo) HasAccounts() bool {
 	return false
 }
 
-// SetAccounts gets a reference to the given V0040PartitionInfoAccounts and assigns it to the Accounts field.
-func (o *V0039PartitionInfo) SetAccounts(v V0040PartitionInfoAccounts) {
+// SetAccounts gets a reference to the given V0039PartitionInfoAccounts and assigns it to the Accounts field.
+func (o *V0039PartitionInfo) SetAccounts(v V0039PartitionInfoAccounts) {
 	o.Accounts = &v
 }
 
 // GetGroups returns the Groups field value if set, zero value otherwise.
-func (o *V0039PartitionInfo) GetGroups() V0040PartitionInfoGroups {
+func (o *V0039PartitionInfo) GetGroups() V0039PartitionInfoGroups {
 	if o == nil || IsNil(o.Groups) {
-		var ret V0040PartitionInfoGroups
+		var ret V0039PartitionInfoGroups
 		return ret
 	}
 	return *o.Groups
@@ -131,7 +131,7 @@ func (o *V0039PartitionInfo) GetGroups() V0040PartitionInfoGroups {
 
 // GetGroupsOk returns a tuple with the Groups field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039PartitionInfo) GetGroupsOk() (*V0040PartitionInfoGroups, bool) {
+func (o *V0039PartitionInfo) GetGroupsOk() (*V0039PartitionInfoGroups, bool) {
 	if o == nil || IsNil(o.Groups) {
 		return nil, false
 	}
@@ -147,15 +147,15 @@ func (o *V0039PartitionInfo) HasGroups() bool {
 	return false
 }
 
-// SetGroups gets a reference to the given V0040PartitionInfoGroups and assigns it to the Groups field.
-func (o *V0039PartitionInfo) SetGroups(v V0040PartitionInfoGroups) {
+// SetGroups gets a reference to the given V0039PartitionInfoGroups and assigns it to the Groups field.
+func (o *V0039PartitionInfo) SetGroups(v V0039PartitionInfoGroups) {
 	o.Groups = &v
 }
 
 // GetQos returns the Qos field value if set, zero value otherwise.
-func (o *V0039PartitionInfo) GetQos() V0040PartitionInfoQos {
+func (o *V0039PartitionInfo) GetQos() V0039PartitionInfoQos {
 	if o == nil || IsNil(o.Qos) {
-		var ret V0040PartitionInfoQos
+		var ret V0039PartitionInfoQos
 		return ret
 	}
 	return *o.Qos
@@ -163,7 +163,7 @@ func (o *V0039PartitionInfo) GetQos() V0040PartitionInfoQos {
 
 // GetQosOk returns a tuple with the Qos field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039PartitionInfo) GetQosOk() (*V0040PartitionInfoQos, bool) {
+func (o *V0039PartitionInfo) GetQosOk() (*V0039PartitionInfoQos, bool) {
 	if o == nil || IsNil(o.Qos) {
 		return nil, false
 	}
@@ -179,8 +179,8 @@ func (o *V0039PartitionInfo) HasQos() bool {
 	return false
 }
 
-// SetQos gets a reference to the given V0040PartitionInfoQos and assigns it to the Qos field.
-func (o *V0039PartitionInfo) SetQos(v V0040PartitionInfoQos) {
+// SetQos gets a reference to the given V0039PartitionInfoQos and assigns it to the Qos field.
+func (o *V0039PartitionInfo) SetQos(v V0039PartitionInfoQos) {
 	o.Qos = &v
 }
 
@@ -217,9 +217,9 @@ func (o *V0039PartitionInfo) SetAlternate(v string) {
 }
 
 // GetTres returns the Tres field value if set, zero value otherwise.
-func (o *V0039PartitionInfo) GetTres() V0040PartitionInfoTres {
+func (o *V0039PartitionInfo) GetTres() V0039PartitionInfoTres {
 	if o == nil || IsNil(o.Tres) {
-		var ret V0040PartitionInfoTres
+		var ret V0039PartitionInfoTres
 		return ret
 	}
 	return *o.Tres
@@ -227,7 +227,7 @@ func (o *V0039PartitionInfo) GetTres() V0040PartitionInfoTres {
 
 // GetTresOk returns a tuple with the Tres field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039PartitionInfo) GetTresOk() (*V0040PartitionInfoTres, bool) {
+func (o *V0039PartitionInfo) GetTresOk() (*V0039PartitionInfoTres, bool) {
 	if o == nil || IsNil(o.Tres) {
 		return nil, false
 	}
@@ -243,8 +243,8 @@ func (o *V0039PartitionInfo) HasTres() bool {
 	return false
 }
 
-// SetTres gets a reference to the given V0040PartitionInfoTres and assigns it to the Tres field.
-func (o *V0039PartitionInfo) SetTres(v V0040PartitionInfoTres) {
+// SetTres gets a reference to the given V0039PartitionInfoTres and assigns it to the Tres field.
+func (o *V0039PartitionInfo) SetTres(v V0039PartitionInfoTres) {
 	o.Tres = &v
 }
 
@@ -281,9 +281,9 @@ func (o *V0039PartitionInfo) SetCluster(v string) {
 }
 
 // GetCpus returns the Cpus field value if set, zero value otherwise.
-func (o *V0039PartitionInfo) GetCpus() V0040PartitionInfoCpus {
+func (o *V0039PartitionInfo) GetCpus() V0039PartitionInfoCpus {
 	if o == nil || IsNil(o.Cpus) {
-		var ret V0040PartitionInfoCpus
+		var ret V0039PartitionInfoCpus
 		return ret
 	}
 	return *o.Cpus
@@ -291,7 +291,7 @@ func (o *V0039PartitionInfo) GetCpus() V0040PartitionInfoCpus {
 
 // GetCpusOk returns a tuple with the Cpus field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039PartitionInfo) GetCpusOk() (*V0040PartitionInfoCpus, bool) {
+func (o *V0039PartitionInfo) GetCpusOk() (*V0039PartitionInfoCpus, bool) {
 	if o == nil || IsNil(o.Cpus) {
 		return nil, false
 	}
@@ -307,8 +307,8 @@ func (o *V0039PartitionInfo) HasCpus() bool {
 	return false
 }
 
-// SetCpus gets a reference to the given V0040PartitionInfoCpus and assigns it to the Cpus field.
-func (o *V0039PartitionInfo) SetCpus(v V0040PartitionInfoCpus) {
+// SetCpus gets a reference to the given V0039PartitionInfoCpus and assigns it to the Cpus field.
+func (o *V0039PartitionInfo) SetCpus(v V0039PartitionInfoCpus) {
 	o.Cpus = &v
 }
 
@@ -409,9 +409,9 @@ func (o *V0039PartitionInfo) SetMaximums(v V0039PartitionInfoMaximums) {
 }
 
 // GetMinimums returns the Minimums field value if set, zero value otherwise.
-func (o *V0039PartitionInfo) GetMinimums() V0040PartitionInfoMinimums {
+func (o *V0039PartitionInfo) GetMinimums() V0039PartitionInfoMinimums {
 	if o == nil || IsNil(o.Minimums) {
-		var ret V0040PartitionInfoMinimums
+		var ret V0039PartitionInfoMinimums
 		return ret
 	}
 	return *o.Minimums
@@ -419,7 +419,7 @@ func (o *V0039PartitionInfo) GetMinimums() V0040PartitionInfoMinimums {
 
 // GetMinimumsOk returns a tuple with the Minimums field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039PartitionInfo) GetMinimumsOk() (*V0040PartitionInfoMinimums, bool) {
+func (o *V0039PartitionInfo) GetMinimumsOk() (*V0039PartitionInfoMinimums, bool) {
 	if o == nil || IsNil(o.Minimums) {
 		return nil, false
 	}
@@ -435,8 +435,8 @@ func (o *V0039PartitionInfo) HasMinimums() bool {
 	return false
 }
 
-// SetMinimums gets a reference to the given V0040PartitionInfoMinimums and assigns it to the Minimums field.
-func (o *V0039PartitionInfo) SetMinimums(v V0040PartitionInfoMinimums) {
+// SetMinimums gets a reference to the given V0039PartitionInfoMinimums and assigns it to the Minimums field.
+func (o *V0039PartitionInfo) SetMinimums(v V0039PartitionInfoMinimums) {
 	o.Minimums = &v
 }
 
@@ -505,9 +505,9 @@ func (o *V0039PartitionInfo) SetNodeSets(v string) {
 }
 
 // GetPriority returns the Priority field value if set, zero value otherwise.
-func (o *V0039PartitionInfo) GetPriority() V0040PartitionInfoPriority {
+func (o *V0039PartitionInfo) GetPriority() V0039PartitionInfoPriority {
 	if o == nil || IsNil(o.Priority) {
-		var ret V0040PartitionInfoPriority
+		var ret V0039PartitionInfoPriority
 		return ret
 	}
 	return *o.Priority
@@ -515,7 +515,7 @@ func (o *V0039PartitionInfo) GetPriority() V0040PartitionInfoPriority {
 
 // GetPriorityOk returns a tuple with the Priority field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039PartitionInfo) GetPriorityOk() (*V0040PartitionInfoPriority, bool) {
+func (o *V0039PartitionInfo) GetPriorityOk() (*V0039PartitionInfoPriority, bool) {
 	if o == nil || IsNil(o.Priority) {
 		return nil, false
 	}
@@ -531,8 +531,8 @@ func (o *V0039PartitionInfo) HasPriority() bool {
 	return false
 }
 
-// SetPriority gets a reference to the given V0040PartitionInfoPriority and assigns it to the Priority field.
-func (o *V0039PartitionInfo) SetPriority(v V0040PartitionInfoPriority) {
+// SetPriority gets a reference to the given V0039PartitionInfoPriority and assigns it to the Priority field.
+func (o *V0039PartitionInfo) SetPriority(v V0039PartitionInfoPriority) {
 	o.Priority = &v
 }
 

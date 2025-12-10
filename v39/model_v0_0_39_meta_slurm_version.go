@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 
@@ -15,11 +15,11 @@ import (
 	"encoding/json"
 )
 
-// checks if the Dbv0039MetaSlurmVersion type satisfies the MappedNullable interface at compile time
-var _ MappedNullable = &Dbv0039MetaSlurmVersion{}
+// checks if the V0039MetaSlurmVersion type satisfies the MappedNullable interface at compile time
+var _ MappedNullable = &V0039MetaSlurmVersion{}
 
-// Dbv0039MetaSlurmVersion struct for Dbv0039MetaSlurmVersion
-type Dbv0039MetaSlurmVersion struct {
+// V0039MetaSlurmVersion struct for V0039MetaSlurmVersion
+type V0039MetaSlurmVersion struct {
 	// 
 	Major *int32 `json:"major,omitempty"`
 	// 
@@ -28,25 +28,25 @@ type Dbv0039MetaSlurmVersion struct {
 	Minor *int32 `json:"minor,omitempty"`
 }
 
-// NewDbv0039MetaSlurmVersion instantiates a new Dbv0039MetaSlurmVersion object
+// NewV0039MetaSlurmVersion instantiates a new V0039MetaSlurmVersion object
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewDbv0039MetaSlurmVersion() *Dbv0039MetaSlurmVersion {
-	this := Dbv0039MetaSlurmVersion{}
+func NewV0039MetaSlurmVersion() *V0039MetaSlurmVersion {
+	this := V0039MetaSlurmVersion{}
 	return &this
 }
 
-// NewDbv0039MetaSlurmVersionWithDefaults instantiates a new Dbv0039MetaSlurmVersion object
+// NewV0039MetaSlurmVersionWithDefaults instantiates a new V0039MetaSlurmVersion object
 // This constructor will only assign default values to properties that have it defined,
 // but it doesn't guarantee that properties required by API are set
-func NewDbv0039MetaSlurmVersionWithDefaults() *Dbv0039MetaSlurmVersion {
-	this := Dbv0039MetaSlurmVersion{}
+func NewV0039MetaSlurmVersionWithDefaults() *V0039MetaSlurmVersion {
+	this := V0039MetaSlurmVersion{}
 	return &this
 }
 
 // GetMajor returns the Major field value if set, zero value otherwise.
-func (o *Dbv0039MetaSlurmVersion) GetMajor() int32 {
+func (o *V0039MetaSlurmVersion) GetMajor() int32 {
 	if o == nil || IsNil(o.Major) {
 		var ret int32
 		return ret
@@ -56,7 +56,7 @@ func (o *Dbv0039MetaSlurmVersion) GetMajor() int32 {
 
 // GetMajorOk returns a tuple with the Major field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Dbv0039MetaSlurmVersion) GetMajorOk() (*int32, bool) {
+func (o *V0039MetaSlurmVersion) GetMajorOk() (*int32, bool) {
 	if o == nil || IsNil(o.Major) {
 		return nil, false
 	}
@@ -64,7 +64,7 @@ func (o *Dbv0039MetaSlurmVersion) GetMajorOk() (*int32, bool) {
 }
 
 // HasMajor returns a boolean if a field has been set.
-func (o *Dbv0039MetaSlurmVersion) HasMajor() bool {
+func (o *V0039MetaSlurmVersion) HasMajor() bool {
 	if o != nil && !IsNil(o.Major) {
 		return true
 	}
@@ -73,12 +73,12 @@ func (o *Dbv0039MetaSlurmVersion) HasMajor() bool {
 }
 
 // SetMajor gets a reference to the given int32 and assigns it to the Major field.
-func (o *Dbv0039MetaSlurmVersion) SetMajor(v int32) {
+func (o *V0039MetaSlurmVersion) SetMajor(v int32) {
 	o.Major = &v
 }
 
 // GetMicro returns the Micro field value if set, zero value otherwise.
-func (o *Dbv0039MetaSlurmVersion) GetMicro() int32 {
+func (o *V0039MetaSlurmVersion) GetMicro() int32 {
 	if o == nil || IsNil(o.Micro) {
 		var ret int32
 		return ret
@@ -88,7 +88,7 @@ func (o *Dbv0039MetaSlurmVersion) GetMicro() int32 {
 
 // GetMicroOk returns a tuple with the Micro field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Dbv0039MetaSlurmVersion) GetMicroOk() (*int32, bool) {
+func (o *V0039MetaSlurmVersion) GetMicroOk() (*int32, bool) {
 	if o == nil || IsNil(o.Micro) {
 		return nil, false
 	}
@@ -96,7 +96,7 @@ func (o *Dbv0039MetaSlurmVersion) GetMicroOk() (*int32, bool) {
 }
 
 // HasMicro returns a boolean if a field has been set.
-func (o *Dbv0039MetaSlurmVersion) HasMicro() bool {
+func (o *V0039MetaSlurmVersion) HasMicro() bool {
 	if o != nil && !IsNil(o.Micro) {
 		return true
 	}
@@ -105,12 +105,12 @@ func (o *Dbv0039MetaSlurmVersion) HasMicro() bool {
 }
 
 // SetMicro gets a reference to the given int32 and assigns it to the Micro field.
-func (o *Dbv0039MetaSlurmVersion) SetMicro(v int32) {
+func (o *V0039MetaSlurmVersion) SetMicro(v int32) {
 	o.Micro = &v
 }
 
 // GetMinor returns the Minor field value if set, zero value otherwise.
-func (o *Dbv0039MetaSlurmVersion) GetMinor() int32 {
+func (o *V0039MetaSlurmVersion) GetMinor() int32 {
 	if o == nil || IsNil(o.Minor) {
 		var ret int32
 		return ret
@@ -120,7 +120,7 @@ func (o *Dbv0039MetaSlurmVersion) GetMinor() int32 {
 
 // GetMinorOk returns a tuple with the Minor field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Dbv0039MetaSlurmVersion) GetMinorOk() (*int32, bool) {
+func (o *V0039MetaSlurmVersion) GetMinorOk() (*int32, bool) {
 	if o == nil || IsNil(o.Minor) {
 		return nil, false
 	}
@@ -128,7 +128,7 @@ func (o *Dbv0039MetaSlurmVersion) GetMinorOk() (*int32, bool) {
 }
 
 // HasMinor returns a boolean if a field has been set.
-func (o *Dbv0039MetaSlurmVersion) HasMinor() bool {
+func (o *V0039MetaSlurmVersion) HasMinor() bool {
 	if o != nil && !IsNil(o.Minor) {
 		return true
 	}
@@ -137,11 +137,11 @@ func (o *Dbv0039MetaSlurmVersion) HasMinor() bool {
 }
 
 // SetMinor gets a reference to the given int32 and assigns it to the Minor field.
-func (o *Dbv0039MetaSlurmVersion) SetMinor(v int32) {
+func (o *V0039MetaSlurmVersion) SetMinor(v int32) {
 	o.Minor = &v
 }
 
-func (o Dbv0039MetaSlurmVersion) MarshalJSON() ([]byte, error) {
+func (o V0039MetaSlurmVersion) MarshalJSON() ([]byte, error) {
 	toSerialize,err := o.ToMap()
 	if err != nil {
 		return []byte{}, err
@@ -149,7 +149,7 @@ func (o Dbv0039MetaSlurmVersion) MarshalJSON() ([]byte, error) {
 	return json.Marshal(toSerialize)
 }
 
-func (o Dbv0039MetaSlurmVersion) ToMap() (map[string]interface{}, error) {
+func (o V0039MetaSlurmVersion) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	if !IsNil(o.Major) {
 		toSerialize["major"] = o.Major
@@ -163,38 +163,38 @@ func (o Dbv0039MetaSlurmVersion) ToMap() (map[string]interface{}, error) {
 	return toSerialize, nil
 }
 
-type NullableDbv0039MetaSlurmVersion struct {
-	value *Dbv0039MetaSlurmVersion
+type NullableV0039MetaSlurmVersion struct {
+	value *V0039MetaSlurmVersion
 	isSet bool
 }
 
-func (v NullableDbv0039MetaSlurmVersion) Get() *Dbv0039MetaSlurmVersion {
+func (v NullableV0039MetaSlurmVersion) Get() *V0039MetaSlurmVersion {
 	return v.value
 }
 
-func (v *NullableDbv0039MetaSlurmVersion) Set(val *Dbv0039MetaSlurmVersion) {
+func (v *NullableV0039MetaSlurmVersion) Set(val *V0039MetaSlurmVersion) {
 	v.value = val
 	v.isSet = true
 }
 
-func (v NullableDbv0039MetaSlurmVersion) IsSet() bool {
+func (v NullableV0039MetaSlurmVersion) IsSet() bool {
 	return v.isSet
 }
 
-func (v *NullableDbv0039MetaSlurmVersion) Unset() {
+func (v *NullableV0039MetaSlurmVersion) Unset() {
 	v.value = nil
 	v.isSet = false
 }
 
-func NewNullableDbv0039MetaSlurmVersion(val *Dbv0039MetaSlurmVersion) *NullableDbv0039MetaSlurmVersion {
-	return &NullableDbv0039MetaSlurmVersion{value: val, isSet: true}
+func NewNullableV0039MetaSlurmVersion(val *V0039MetaSlurmVersion) *NullableV0039MetaSlurmVersion {
+	return &NullableV0039MetaSlurmVersion{value: val, isSet: true}
 }
 
-func (v NullableDbv0039MetaSlurmVersion) MarshalJSON() ([]byte, error) {
+func (v NullableV0039MetaSlurmVersion) MarshalJSON() ([]byte, error) {
 	return json.Marshal(v.value)
 }
 
-func (v *NullableDbv0039MetaSlurmVersion) UnmarshalJSON(src []byte) error {
+func (v *NullableV0039MetaSlurmVersion) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
