@@ -28,7 +28,7 @@ type V0039JobSubmissionResponse struct {
 	// new job ID
 	JobId *int32 `json:"job_id,omitempty"`
 	// new job step ID
-	StepId *int32 `json:"step_id,omitempty"`
+	StepId *uint32 `json:"step_id,omitempty"`
 	// Message to user from job_submit plugin
 	JobSubmitUserMsg *string `json:"job_submit_user_msg,omitempty"`
 }
@@ -179,9 +179,9 @@ func (o *V0039JobSubmissionResponse) SetJobId(v int32) {
 }
 
 // GetStepId returns the StepId field value if set, zero value otherwise.
-func (o *V0039JobSubmissionResponse) GetStepId() int32 {
+func (o *V0039JobSubmissionResponse) GetStepId() uint32 {
 	if o == nil || IsNil(o.StepId) {
-		var ret int32
+		var ret uint32
 		return ret
 	}
 	return *o.StepId
@@ -189,7 +189,7 @@ func (o *V0039JobSubmissionResponse) GetStepId() int32 {
 
 // GetStepIdOk returns a tuple with the StepId field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039JobSubmissionResponse) GetStepIdOk() (*int32, bool) {
+func (o *V0039JobSubmissionResponse) GetStepIdOk() (*uint32, bool) {
 	if o == nil || IsNil(o.StepId) {
 		return nil, false
 	}
@@ -206,7 +206,7 @@ func (o *V0039JobSubmissionResponse) HasStepId() bool {
 }
 
 // SetStepId gets a reference to the given int32 and assigns it to the StepId field.
-func (o *V0039JobSubmissionResponse) SetStepId(v int32) {
+func (o *V0039JobSubmissionResponse) SetStepId(v uint32) {
 	o.StepId = &v
 }
 
