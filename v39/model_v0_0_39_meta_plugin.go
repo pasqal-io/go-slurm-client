@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 
@@ -15,36 +15,36 @@ import (
 	"encoding/json"
 )
 
-// checks if the Dbv0039MetaPlugin type satisfies the MappedNullable interface at compile time
-var _ MappedNullable = &Dbv0039MetaPlugin{}
+// checks if the V0039MetaPlugin type satisfies the MappedNullable interface at compile time
+var _ MappedNullable = &V0039MetaPlugin{}
 
-// Dbv0039MetaPlugin struct for Dbv0039MetaPlugin
-type Dbv0039MetaPlugin struct {
+// V0039MetaPlugin struct for V0039MetaPlugin
+type V0039MetaPlugin struct {
 	// 
 	Type *string `json:"type,omitempty"`
 	// 
 	Name *string `json:"name,omitempty"`
 }
 
-// NewDbv0039MetaPlugin instantiates a new Dbv0039MetaPlugin object
+// NewV0039MetaPlugin instantiates a new V0039MetaPlugin object
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewDbv0039MetaPlugin() *Dbv0039MetaPlugin {
-	this := Dbv0039MetaPlugin{}
+func NewV0039MetaPlugin() *V0039MetaPlugin {
+	this := V0039MetaPlugin{}
 	return &this
 }
 
-// NewDbv0039MetaPluginWithDefaults instantiates a new Dbv0039MetaPlugin object
+// NewV0039MetaPluginWithDefaults instantiates a new V0039MetaPlugin object
 // This constructor will only assign default values to properties that have it defined,
 // but it doesn't guarantee that properties required by API are set
-func NewDbv0039MetaPluginWithDefaults() *Dbv0039MetaPlugin {
-	this := Dbv0039MetaPlugin{}
+func NewV0039MetaPluginWithDefaults() *V0039MetaPlugin {
+	this := V0039MetaPlugin{}
 	return &this
 }
 
 // GetType returns the Type field value if set, zero value otherwise.
-func (o *Dbv0039MetaPlugin) GetType() string {
+func (o *V0039MetaPlugin) GetType() string {
 	if o == nil || IsNil(o.Type) {
 		var ret string
 		return ret
@@ -54,7 +54,7 @@ func (o *Dbv0039MetaPlugin) GetType() string {
 
 // GetTypeOk returns a tuple with the Type field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Dbv0039MetaPlugin) GetTypeOk() (*string, bool) {
+func (o *V0039MetaPlugin) GetTypeOk() (*string, bool) {
 	if o == nil || IsNil(o.Type) {
 		return nil, false
 	}
@@ -62,7 +62,7 @@ func (o *Dbv0039MetaPlugin) GetTypeOk() (*string, bool) {
 }
 
 // HasType returns a boolean if a field has been set.
-func (o *Dbv0039MetaPlugin) HasType() bool {
+func (o *V0039MetaPlugin) HasType() bool {
 	if o != nil && !IsNil(o.Type) {
 		return true
 	}
@@ -71,12 +71,12 @@ func (o *Dbv0039MetaPlugin) HasType() bool {
 }
 
 // SetType gets a reference to the given string and assigns it to the Type field.
-func (o *Dbv0039MetaPlugin) SetType(v string) {
+func (o *V0039MetaPlugin) SetType(v string) {
 	o.Type = &v
 }
 
 // GetName returns the Name field value if set, zero value otherwise.
-func (o *Dbv0039MetaPlugin) GetName() string {
+func (o *V0039MetaPlugin) GetName() string {
 	if o == nil || IsNil(o.Name) {
 		var ret string
 		return ret
@@ -86,7 +86,7 @@ func (o *Dbv0039MetaPlugin) GetName() string {
 
 // GetNameOk returns a tuple with the Name field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Dbv0039MetaPlugin) GetNameOk() (*string, bool) {
+func (o *V0039MetaPlugin) GetNameOk() (*string, bool) {
 	if o == nil || IsNil(o.Name) {
 		return nil, false
 	}
@@ -94,7 +94,7 @@ func (o *Dbv0039MetaPlugin) GetNameOk() (*string, bool) {
 }
 
 // HasName returns a boolean if a field has been set.
-func (o *Dbv0039MetaPlugin) HasName() bool {
+func (o *V0039MetaPlugin) HasName() bool {
 	if o != nil && !IsNil(o.Name) {
 		return true
 	}
@@ -103,11 +103,11 @@ func (o *Dbv0039MetaPlugin) HasName() bool {
 }
 
 // SetName gets a reference to the given string and assigns it to the Name field.
-func (o *Dbv0039MetaPlugin) SetName(v string) {
+func (o *V0039MetaPlugin) SetName(v string) {
 	o.Name = &v
 }
 
-func (o Dbv0039MetaPlugin) MarshalJSON() ([]byte, error) {
+func (o V0039MetaPlugin) MarshalJSON() ([]byte, error) {
 	toSerialize,err := o.ToMap()
 	if err != nil {
 		return []byte{}, err
@@ -115,7 +115,7 @@ func (o Dbv0039MetaPlugin) MarshalJSON() ([]byte, error) {
 	return json.Marshal(toSerialize)
 }
 
-func (o Dbv0039MetaPlugin) ToMap() (map[string]interface{}, error) {
+func (o V0039MetaPlugin) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	if !IsNil(o.Type) {
 		toSerialize["type"] = o.Type
@@ -126,38 +126,38 @@ func (o Dbv0039MetaPlugin) ToMap() (map[string]interface{}, error) {
 	return toSerialize, nil
 }
 
-type NullableDbv0039MetaPlugin struct {
-	value *Dbv0039MetaPlugin
+type NullableV0039MetaPlugin struct {
+	value *V0039MetaPlugin
 	isSet bool
 }
 
-func (v NullableDbv0039MetaPlugin) Get() *Dbv0039MetaPlugin {
+func (v NullableV0039MetaPlugin) Get() *V0039MetaPlugin {
 	return v.value
 }
 
-func (v *NullableDbv0039MetaPlugin) Set(val *Dbv0039MetaPlugin) {
+func (v *NullableV0039MetaPlugin) Set(val *V0039MetaPlugin) {
 	v.value = val
 	v.isSet = true
 }
 
-func (v NullableDbv0039MetaPlugin) IsSet() bool {
+func (v NullableV0039MetaPlugin) IsSet() bool {
 	return v.isSet
 }
 
-func (v *NullableDbv0039MetaPlugin) Unset() {
+func (v *NullableV0039MetaPlugin) Unset() {
 	v.value = nil
 	v.isSet = false
 }
 
-func NewNullableDbv0039MetaPlugin(val *Dbv0039MetaPlugin) *NullableDbv0039MetaPlugin {
-	return &NullableDbv0039MetaPlugin{value: val, isSet: true}
+func NewNullableV0039MetaPlugin(val *V0039MetaPlugin) *NullableV0039MetaPlugin {
+	return &NullableV0039MetaPlugin{value: val, isSet: true}
 }
 
-func (v NullableDbv0039MetaPlugin) MarshalJSON() ([]byte, error) {
+func (v NullableV0039MetaPlugin) MarshalJSON() ([]byte, error) {
 	return json.Marshal(v.value)
 }
 
-func (v *NullableDbv0039MetaPlugin) UnmarshalJSON(src []byte) error {
+func (v *NullableV0039MetaPlugin) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }

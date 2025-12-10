@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **DayOfWeek** | Pointer to **string** |  | [optional] 
 **Specification** | Pointer to **string** |  | [optional] 
 **Command** | Pointer to **string** |  | [optional] 
-**Line** | Pointer to [**V0040CronEntryLine**](V0040CronEntryLine.md) |  | [optional] 
+**Line** | Pointer to [**V0039CronEntryLine**](V0039CronEntryLine.md) |  | [optional] 
 
 ## Methods
 
@@ -235,20 +235,20 @@ HasCommand returns a boolean if a field has been set.
 
 ### GetLine
 
-`func (o *V0039CronEntry) GetLine() V0040CronEntryLine`
+`func (o *V0039CronEntry) GetLine() V0039CronEntryLine`
 
 GetLine returns the Line field if non-nil, zero value otherwise.
 
 ### GetLineOk
 
-`func (o *V0039CronEntry) GetLineOk() (*V0040CronEntryLine, bool)`
+`func (o *V0039CronEntry) GetLineOk() (*V0039CronEntryLine, bool)`
 
 GetLineOk returns a tuple with the Line field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLine
 
-`func (o *V0039CronEntry) SetLine(v V0040CronEntryLine)`
+`func (o *V0039CronEntry) SetLine(v V0039CronEntryLine)`
 
 SetLine sets Line field to given value.
 

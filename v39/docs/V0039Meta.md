@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Plugin** | Pointer to [**Dbv0039MetaPlugin**](Dbv0039MetaPlugin.md) |  | [optional] 
-**Slurm** | Pointer to [**Dbv0039MetaSlurm**](Dbv0039MetaSlurm.md) |  | [optional] 
+**Plugin** | Pointer to [**V0039MetaPlugin**](V0039MetaPlugin.md) |  | [optional] 
+**Slurm** | Pointer to [**V0039MetaSlurm**](V0039MetaSlurm.md) |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetPlugin
 
-`func (o *V0039Meta) GetPlugin() Dbv0039MetaPlugin`
+`func (o *V0039Meta) GetPlugin() V0039MetaPlugin`
 
 GetPlugin returns the Plugin field if non-nil, zero value otherwise.
 
 ### GetPluginOk
 
-`func (o *V0039Meta) GetPluginOk() (*Dbv0039MetaPlugin, bool)`
+`func (o *V0039Meta) GetPluginOk() (*V0039MetaPlugin, bool)`
 
 GetPluginOk returns a tuple with the Plugin field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPlugin
 
-`func (o *V0039Meta) SetPlugin(v Dbv0039MetaPlugin)`
+`func (o *V0039Meta) SetPlugin(v V0039MetaPlugin)`
 
 SetPlugin sets Plugin field to given value.
 
@@ -53,20 +53,20 @@ HasPlugin returns a boolean if a field has been set.
 
 ### GetSlurm
 
-`func (o *V0039Meta) GetSlurm() Dbv0039MetaSlurm`
+`func (o *V0039Meta) GetSlurm() V0039MetaSlurm`
 
 GetSlurm returns the Slurm field if non-nil, zero value otherwise.
 
 ### GetSlurmOk
 
-`func (o *V0039Meta) GetSlurmOk() (*Dbv0039MetaSlurm, bool)`
+`func (o *V0039Meta) GetSlurmOk() (*V0039MetaSlurm, bool)`
 
 GetSlurmOk returns a tuple with the Slurm field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSlurm
 
-`func (o *V0039Meta) SetSlurm(v Dbv0039MetaSlurm)`
+`func (o *V0039Meta) SetSlurm(v V0039MetaSlurm)`
 
 SetSlurm sets Slurm field to given value.
 

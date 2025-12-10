@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 

@@ -48,8 +48,8 @@ Name | Type | Description | Notes
 **BfTableSizeMean** | Pointer to **int64** |  | [optional] 
 **BfWhenLastCycle** | Pointer to **int64** |  | [optional] 
 **BfActive** | Pointer to **bool** |  | [optional] 
-**RpcsByMessageType** | Pointer to [**[]V0040StatsMsgRpcsByTypeInner**](V0040StatsMsgRpcsByTypeInner.md) | RPCs by message type | [optional] 
-**RpcsByUser** | Pointer to [**[]V0040StatsMsgRpcsByUserInner**](V0040StatsMsgRpcsByUserInner.md) | RPCs by user | [optional] 
+**RpcsByMessageType** | Pointer to [**[]V0039StatsMsgRpcsByTypeInner**](V0039StatsMsgRpcsByTypeInner.md) | RPCs by message type | [optional] 
+**RpcsByUser** | Pointer to [**[]V0039StatsMsgRpcsByUserInner**](V0039StatsMsgRpcsByUserInner.md) | RPCs by user | [optional] 
 
 ## Methods
 
@@ -1172,20 +1172,20 @@ HasBfActive returns a boolean if a field has been set.
 
 ### GetRpcsByMessageType
 
-`func (o *V0039StatsMsg) GetRpcsByMessageType() []V0040StatsMsgRpcsByTypeInner`
+`func (o *V0039StatsMsg) GetRpcsByMessageType() []V0039StatsMsgRpcsByTypeInner`
 
 GetRpcsByMessageType returns the RpcsByMessageType field if non-nil, zero value otherwise.
 
 ### GetRpcsByMessageTypeOk
 
-`func (o *V0039StatsMsg) GetRpcsByMessageTypeOk() (*[]V0040StatsMsgRpcsByTypeInner, bool)`
+`func (o *V0039StatsMsg) GetRpcsByMessageTypeOk() (*[]V0039StatsMsgRpcsByTypeInner, bool)`
 
 GetRpcsByMessageTypeOk returns a tuple with the RpcsByMessageType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRpcsByMessageType
 
-`func (o *V0039StatsMsg) SetRpcsByMessageType(v []V0040StatsMsgRpcsByTypeInner)`
+`func (o *V0039StatsMsg) SetRpcsByMessageType(v []V0039StatsMsgRpcsByTypeInner)`
 
 SetRpcsByMessageType sets RpcsByMessageType field to given value.
 
@@ -1197,20 +1197,20 @@ HasRpcsByMessageType returns a boolean if a field has been set.
 
 ### GetRpcsByUser
 
-`func (o *V0039StatsMsg) GetRpcsByUser() []V0040StatsMsgRpcsByUserInner`
+`func (o *V0039StatsMsg) GetRpcsByUser() []V0039StatsMsgRpcsByUserInner`
 
 GetRpcsByUser returns the RpcsByUser field if non-nil, zero value otherwise.
 
 ### GetRpcsByUserOk
 
-`func (o *V0039StatsMsg) GetRpcsByUserOk() (*[]V0040StatsMsgRpcsByUserInner, bool)`
+`func (o *V0039StatsMsg) GetRpcsByUserOk() (*[]V0039StatsMsgRpcsByUserInner, bool)`
 
 GetRpcsByUserOk returns a tuple with the RpcsByUser field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRpcsByUser
 
-`func (o *V0039StatsMsg) SetRpcsByUser(v []V0040StatsMsgRpcsByUserInner)`
+`func (o *V0039StatsMsg) SetRpcsByUser(v []V0039StatsMsgRpcsByUserInner)`
 
 SetRpcsByUser sets RpcsByUser field to given value.
 

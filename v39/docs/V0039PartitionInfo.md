@@ -4,21 +4,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Nodes** | Pointer to [**V0040PartitionInfoNodes**](V0040PartitionInfoNodes.md) |  | [optional] 
-**Accounts** | Pointer to [**V0040PartitionInfoAccounts**](V0040PartitionInfoAccounts.md) |  | [optional] 
-**Groups** | Pointer to [**V0040PartitionInfoGroups**](V0040PartitionInfoGroups.md) |  | [optional] 
-**Qos** | Pointer to [**V0040PartitionInfoQos**](V0040PartitionInfoQos.md) |  | [optional] 
+**Nodes** | Pointer to [**V0039PartitionInfoNodes**](V0039PartitionInfoNodes.md) |  | [optional] 
+**Accounts** | Pointer to [**V0039PartitionInfoAccounts**](V0039PartitionInfoAccounts.md) |  | [optional] 
+**Groups** | Pointer to [**V0039PartitionInfoGroups**](V0039PartitionInfoGroups.md) |  | [optional] 
+**Qos** | Pointer to [**V0039PartitionInfoQos**](V0039PartitionInfoQos.md) |  | [optional] 
 **Alternate** | Pointer to **string** |  | [optional] 
-**Tres** | Pointer to [**V0040PartitionInfoTres**](V0040PartitionInfoTres.md) |  | [optional] 
+**Tres** | Pointer to [**V0039PartitionInfoTres**](V0039PartitionInfoTres.md) |  | [optional] 
 **Cluster** | Pointer to **string** |  | [optional] 
-**Cpus** | Pointer to [**V0040PartitionInfoCpus**](V0040PartitionInfoCpus.md) |  | [optional] 
+**Cpus** | Pointer to [**V0039PartitionInfoCpus**](V0039PartitionInfoCpus.md) |  | [optional] 
 **Defaults** | Pointer to [**V0039PartitionInfoDefaults**](V0039PartitionInfoDefaults.md) |  | [optional] 
 **GraceTime** | Pointer to **int32** |  | [optional] 
 **Maximums** | Pointer to [**V0039PartitionInfoMaximums**](V0039PartitionInfoMaximums.md) |  | [optional] 
-**Minimums** | Pointer to [**V0040PartitionInfoMinimums**](V0040PartitionInfoMinimums.md) |  | [optional] 
+**Minimums** | Pointer to [**V0039PartitionInfoMinimums**](V0039PartitionInfoMinimums.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **NodeSets** | Pointer to **string** |  | [optional] 
-**Priority** | Pointer to [**V0040PartitionInfoPriority**](V0040PartitionInfoPriority.md) |  | [optional] 
+**Priority** | Pointer to [**V0039PartitionInfoPriority**](V0039PartitionInfoPriority.md) |  | [optional] 
 **Timeouts** | Pointer to [**V0039PartitionInfoTimeouts**](V0039PartitionInfoTimeouts.md) |  | [optional] 
 **SuspendTime** | Pointer to [**V0039Uint32NoVal**](V0039Uint32NoVal.md) |  | [optional] 
 
@@ -43,20 +43,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetNodes
 
-`func (o *V0039PartitionInfo) GetNodes() V0040PartitionInfoNodes`
+`func (o *V0039PartitionInfo) GetNodes() V0039PartitionInfoNodes`
 
 GetNodes returns the Nodes field if non-nil, zero value otherwise.
 
 ### GetNodesOk
 
-`func (o *V0039PartitionInfo) GetNodesOk() (*V0040PartitionInfoNodes, bool)`
+`func (o *V0039PartitionInfo) GetNodesOk() (*V0039PartitionInfoNodes, bool)`
 
 GetNodesOk returns a tuple with the Nodes field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNodes
 
-`func (o *V0039PartitionInfo) SetNodes(v V0040PartitionInfoNodes)`
+`func (o *V0039PartitionInfo) SetNodes(v V0039PartitionInfoNodes)`
 
 SetNodes sets Nodes field to given value.
 
@@ -68,20 +68,20 @@ HasNodes returns a boolean if a field has been set.
 
 ### GetAccounts
 
-`func (o *V0039PartitionInfo) GetAccounts() V0040PartitionInfoAccounts`
+`func (o *V0039PartitionInfo) GetAccounts() V0039PartitionInfoAccounts`
 
 GetAccounts returns the Accounts field if non-nil, zero value otherwise.
 
 ### GetAccountsOk
 
-`func (o *V0039PartitionInfo) GetAccountsOk() (*V0040PartitionInfoAccounts, bool)`
+`func (o *V0039PartitionInfo) GetAccountsOk() (*V0039PartitionInfoAccounts, bool)`
 
 GetAccountsOk returns a tuple with the Accounts field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAccounts
 
-`func (o *V0039PartitionInfo) SetAccounts(v V0040PartitionInfoAccounts)`
+`func (o *V0039PartitionInfo) SetAccounts(v V0039PartitionInfoAccounts)`
 
 SetAccounts sets Accounts field to given value.
 
@@ -93,20 +93,20 @@ HasAccounts returns a boolean if a field has been set.
 
 ### GetGroups
 
-`func (o *V0039PartitionInfo) GetGroups() V0040PartitionInfoGroups`
+`func (o *V0039PartitionInfo) GetGroups() V0039PartitionInfoGroups`
 
 GetGroups returns the Groups field if non-nil, zero value otherwise.
 
 ### GetGroupsOk
 
-`func (o *V0039PartitionInfo) GetGroupsOk() (*V0040PartitionInfoGroups, bool)`
+`func (o *V0039PartitionInfo) GetGroupsOk() (*V0039PartitionInfoGroups, bool)`
 
 GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetGroups
 
-`func (o *V0039PartitionInfo) SetGroups(v V0040PartitionInfoGroups)`
+`func (o *V0039PartitionInfo) SetGroups(v V0039PartitionInfoGroups)`
 
 SetGroups sets Groups field to given value.
 
@@ -118,20 +118,20 @@ HasGroups returns a boolean if a field has been set.
 
 ### GetQos
 
-`func (o *V0039PartitionInfo) GetQos() V0040PartitionInfoQos`
+`func (o *V0039PartitionInfo) GetQos() V0039PartitionInfoQos`
 
 GetQos returns the Qos field if non-nil, zero value otherwise.
 
 ### GetQosOk
 
-`func (o *V0039PartitionInfo) GetQosOk() (*V0040PartitionInfoQos, bool)`
+`func (o *V0039PartitionInfo) GetQosOk() (*V0039PartitionInfoQos, bool)`
 
 GetQosOk returns a tuple with the Qos field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetQos
 
-`func (o *V0039PartitionInfo) SetQos(v V0040PartitionInfoQos)`
+`func (o *V0039PartitionInfo) SetQos(v V0039PartitionInfoQos)`
 
 SetQos sets Qos field to given value.
 
@@ -168,20 +168,20 @@ HasAlternate returns a boolean if a field has been set.
 
 ### GetTres
 
-`func (o *V0039PartitionInfo) GetTres() V0040PartitionInfoTres`
+`func (o *V0039PartitionInfo) GetTres() V0039PartitionInfoTres`
 
 GetTres returns the Tres field if non-nil, zero value otherwise.
 
 ### GetTresOk
 
-`func (o *V0039PartitionInfo) GetTresOk() (*V0040PartitionInfoTres, bool)`
+`func (o *V0039PartitionInfo) GetTresOk() (*V0039PartitionInfoTres, bool)`
 
 GetTresOk returns a tuple with the Tres field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTres
 
-`func (o *V0039PartitionInfo) SetTres(v V0040PartitionInfoTres)`
+`func (o *V0039PartitionInfo) SetTres(v V0039PartitionInfoTres)`
 
 SetTres sets Tres field to given value.
 
@@ -218,20 +218,20 @@ HasCluster returns a boolean if a field has been set.
 
 ### GetCpus
 
-`func (o *V0039PartitionInfo) GetCpus() V0040PartitionInfoCpus`
+`func (o *V0039PartitionInfo) GetCpus() V0039PartitionInfoCpus`
 
 GetCpus returns the Cpus field if non-nil, zero value otherwise.
 
 ### GetCpusOk
 
-`func (o *V0039PartitionInfo) GetCpusOk() (*V0040PartitionInfoCpus, bool)`
+`func (o *V0039PartitionInfo) GetCpusOk() (*V0039PartitionInfoCpus, bool)`
 
 GetCpusOk returns a tuple with the Cpus field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCpus
 
-`func (o *V0039PartitionInfo) SetCpus(v V0040PartitionInfoCpus)`
+`func (o *V0039PartitionInfo) SetCpus(v V0039PartitionInfoCpus)`
 
 SetCpus sets Cpus field to given value.
 
@@ -318,20 +318,20 @@ HasMaximums returns a boolean if a field has been set.
 
 ### GetMinimums
 
-`func (o *V0039PartitionInfo) GetMinimums() V0040PartitionInfoMinimums`
+`func (o *V0039PartitionInfo) GetMinimums() V0039PartitionInfoMinimums`
 
 GetMinimums returns the Minimums field if non-nil, zero value otherwise.
 
 ### GetMinimumsOk
 
-`func (o *V0039PartitionInfo) GetMinimumsOk() (*V0040PartitionInfoMinimums, bool)`
+`func (o *V0039PartitionInfo) GetMinimumsOk() (*V0039PartitionInfoMinimums, bool)`
 
 GetMinimumsOk returns a tuple with the Minimums field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMinimums
 
-`func (o *V0039PartitionInfo) SetMinimums(v V0040PartitionInfoMinimums)`
+`func (o *V0039PartitionInfo) SetMinimums(v V0039PartitionInfoMinimums)`
 
 SetMinimums sets Minimums field to given value.
 
@@ -393,20 +393,20 @@ HasNodeSets returns a boolean if a field has been set.
 
 ### GetPriority
 
-`func (o *V0039PartitionInfo) GetPriority() V0040PartitionInfoPriority`
+`func (o *V0039PartitionInfo) GetPriority() V0039PartitionInfoPriority`
 
 GetPriority returns the Priority field if non-nil, zero value otherwise.
 
 ### GetPriorityOk
 
-`func (o *V0039PartitionInfo) GetPriorityOk() (*V0040PartitionInfoPriority, bool)`
+`func (o *V0039PartitionInfo) GetPriorityOk() (*V0039PartitionInfoPriority, bool)`
 
 GetPriorityOk returns a tuple with the Priority field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPriority
 
-`func (o *V0039PartitionInfo) SetPriority(v V0040PartitionInfoPriority)`
+`func (o *V0039PartitionInfo) SetPriority(v V0039PartitionInfoPriority)`
 
 SetPriority sets Priority field to given value.
 

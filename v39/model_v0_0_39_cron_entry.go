@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 
@@ -28,7 +28,7 @@ type V0039CronEntry struct {
 	DayOfWeek *string `json:"day_of_week,omitempty"`
 	Specification *string `json:"specification,omitempty"`
 	Command *string `json:"command,omitempty"`
-	Line *V0040CronEntryLine `json:"line,omitempty"`
+	Line *V0039CronEntryLine `json:"line,omitempty"`
 }
 
 // NewV0039CronEntry instantiates a new V0039CronEntry object
@@ -305,9 +305,9 @@ func (o *V0039CronEntry) SetCommand(v string) {
 }
 
 // GetLine returns the Line field value if set, zero value otherwise.
-func (o *V0039CronEntry) GetLine() V0040CronEntryLine {
+func (o *V0039CronEntry) GetLine() V0039CronEntryLine {
 	if o == nil || IsNil(o.Line) {
-		var ret V0040CronEntryLine
+		var ret V0039CronEntryLine
 		return ret
 	}
 	return *o.Line
@@ -315,7 +315,7 @@ func (o *V0039CronEntry) GetLine() V0040CronEntryLine {
 
 // GetLineOk returns a tuple with the Line field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V0039CronEntry) GetLineOk() (*V0040CronEntryLine, bool) {
+func (o *V0039CronEntry) GetLineOk() (*V0039CronEntryLine, bool) {
 	if o == nil || IsNil(o.Line) {
 		return nil, false
 	}
@@ -331,8 +331,8 @@ func (o *V0039CronEntry) HasLine() bool {
 	return false
 }
 
-// SetLine gets a reference to the given V0040CronEntryLine and assigns it to the Line field.
-func (o *V0039CronEntry) SetLine(v V0040CronEntryLine) {
+// SetLine gets a reference to the given V0039CronEntryLine and assigns it to the Line field.
+func (o *V0039CronEntry) SetLine(v V0039CronEntryLine) {
 	o.Line = &v
 }
 

@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 
@@ -20,8 +20,8 @@ var _ MappedNullable = &Dbv0039Meta{}
 
 // Dbv0039Meta struct for Dbv0039Meta
 type Dbv0039Meta struct {
-	Plugin *Dbv0039MetaPlugin `json:"plugin,omitempty"`
-	Slurm *Dbv0039MetaSlurm `json:"Slurm,omitempty"`
+	Plugin *V0039MetaPlugin `json:"plugin,omitempty"`
+	Slurm *V0039MetaSlurm `json:"Slurm,omitempty"`
 }
 
 // NewDbv0039Meta instantiates a new Dbv0039Meta object
@@ -42,9 +42,9 @@ func NewDbv0039MetaWithDefaults() *Dbv0039Meta {
 }
 
 // GetPlugin returns the Plugin field value if set, zero value otherwise.
-func (o *Dbv0039Meta) GetPlugin() Dbv0039MetaPlugin {
+func (o *Dbv0039Meta) GetPlugin() V0039MetaPlugin {
 	if o == nil || IsNil(o.Plugin) {
-		var ret Dbv0039MetaPlugin
+		var ret V0039MetaPlugin
 		return ret
 	}
 	return *o.Plugin
@@ -52,7 +52,7 @@ func (o *Dbv0039Meta) GetPlugin() Dbv0039MetaPlugin {
 
 // GetPluginOk returns a tuple with the Plugin field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Dbv0039Meta) GetPluginOk() (*Dbv0039MetaPlugin, bool) {
+func (o *Dbv0039Meta) GetPluginOk() (*V0039MetaPlugin, bool) {
 	if o == nil || IsNil(o.Plugin) {
 		return nil, false
 	}
@@ -68,15 +68,15 @@ func (o *Dbv0039Meta) HasPlugin() bool {
 	return false
 }
 
-// SetPlugin gets a reference to the given Dbv0039MetaPlugin and assigns it to the Plugin field.
-func (o *Dbv0039Meta) SetPlugin(v Dbv0039MetaPlugin) {
+// SetPlugin gets a reference to the given V0039MetaPlugin and assigns it to the Plugin field.
+func (o *Dbv0039Meta) SetPlugin(v V0039MetaPlugin) {
 	o.Plugin = &v
 }
 
 // GetSlurm returns the Slurm field value if set, zero value otherwise.
-func (o *Dbv0039Meta) GetSlurm() Dbv0039MetaSlurm {
+func (o *Dbv0039Meta) GetSlurm() V0039MetaSlurm {
 	if o == nil || IsNil(o.Slurm) {
-		var ret Dbv0039MetaSlurm
+		var ret V0039MetaSlurm
 		return ret
 	}
 	return *o.Slurm
@@ -84,7 +84,7 @@ func (o *Dbv0039Meta) GetSlurm() Dbv0039MetaSlurm {
 
 // GetSlurmOk returns a tuple with the Slurm field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Dbv0039Meta) GetSlurmOk() (*Dbv0039MetaSlurm, bool) {
+func (o *Dbv0039Meta) GetSlurmOk() (*V0039MetaSlurm, bool) {
 	if o == nil || IsNil(o.Slurm) {
 		return nil, false
 	}
@@ -100,8 +100,8 @@ func (o *Dbv0039Meta) HasSlurm() bool {
 	return false
 }
 
-// SetSlurm gets a reference to the given Dbv0039MetaSlurm and assigns it to the Slurm field.
-func (o *Dbv0039Meta) SetSlurm(v Dbv0039MetaSlurm) {
+// SetSlurm gets a reference to the given V0039MetaSlurm and assigns it to the Slurm field.
+func (o *Dbv0039Meta) SetSlurm(v V0039MetaSlurm) {
 	o.Slurm = &v
 }
 

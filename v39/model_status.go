@@ -1,9 +1,9 @@
 /*
 Slurm Rest API
 
-API to access and control Slurm DB.
+API to access and control Slurm.
 
-API version: Slurm-23.11.11&openapi/dbv0.0.39&openapi/slurmctld&openapi/v0.0.38&openapi/slurmdbd&openapi/v0.0.39&openapi/dbv0.0.38
+API version: 0.0.39
 Contact: sales@schedmd.com
 */
 
@@ -20,11 +20,11 @@ var _ MappedNullable = &Status{}
 
 // Status struct for Status
 type Status struct {
-	Meta *V0039Meta `json:"meta,omitempty"`
+	Meta *Dbv0039Meta `json:"meta,omitempty"`
 	// Slurm errors
-	Errors []V0039Error `json:"errors,omitempty"`
+	Errors []Dbv0039Error `json:"errors,omitempty"`
 	// Slurm warnings
-	Warnings []V0039Warning `json:"warnings,omitempty"`
+	Warnings []Dbv0039Warning `json:"warnings,omitempty"`
 }
 
 // NewStatus instantiates a new Status object
@@ -45,9 +45,9 @@ func NewStatusWithDefaults() *Status {
 }
 
 // GetMeta returns the Meta field value if set, zero value otherwise.
-func (o *Status) GetMeta() V0039Meta {
+func (o *Status) GetMeta() Dbv0039Meta {
 	if o == nil || IsNil(o.Meta) {
-		var ret V0039Meta
+		var ret Dbv0039Meta
 		return ret
 	}
 	return *o.Meta
@@ -55,7 +55,7 @@ func (o *Status) GetMeta() V0039Meta {
 
 // GetMetaOk returns a tuple with the Meta field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Status) GetMetaOk() (*V0039Meta, bool) {
+func (o *Status) GetMetaOk() (*Dbv0039Meta, bool) {
 	if o == nil || IsNil(o.Meta) {
 		return nil, false
 	}
@@ -71,15 +71,15 @@ func (o *Status) HasMeta() bool {
 	return false
 }
 
-// SetMeta gets a reference to the given V0039Meta and assigns it to the Meta field.
-func (o *Status) SetMeta(v V0039Meta) {
+// SetMeta gets a reference to the given Dbv0039Meta and assigns it to the Meta field.
+func (o *Status) SetMeta(v Dbv0039Meta) {
 	o.Meta = &v
 }
 
 // GetErrors returns the Errors field value if set, zero value otherwise.
-func (o *Status) GetErrors() []V0039Error {
+func (o *Status) GetErrors() []Dbv0039Error {
 	if o == nil || IsNil(o.Errors) {
-		var ret []V0039Error
+		var ret []Dbv0039Error
 		return ret
 	}
 	return o.Errors
@@ -87,7 +87,7 @@ func (o *Status) GetErrors() []V0039Error {
 
 // GetErrorsOk returns a tuple with the Errors field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Status) GetErrorsOk() ([]V0039Error, bool) {
+func (o *Status) GetErrorsOk() ([]Dbv0039Error, bool) {
 	if o == nil || IsNil(o.Errors) {
 		return nil, false
 	}
@@ -103,15 +103,15 @@ func (o *Status) HasErrors() bool {
 	return false
 }
 
-// SetErrors gets a reference to the given []V0039Error and assigns it to the Errors field.
-func (o *Status) SetErrors(v []V0039Error) {
+// SetErrors gets a reference to the given []Dbv0039Error and assigns it to the Errors field.
+func (o *Status) SetErrors(v []Dbv0039Error) {
 	o.Errors = v
 }
 
 // GetWarnings returns the Warnings field value if set, zero value otherwise.
-func (o *Status) GetWarnings() []V0039Warning {
+func (o *Status) GetWarnings() []Dbv0039Warning {
 	if o == nil || IsNil(o.Warnings) {
-		var ret []V0039Warning
+		var ret []Dbv0039Warning
 		return ret
 	}
 	return o.Warnings
@@ -119,7 +119,7 @@ func (o *Status) GetWarnings() []V0039Warning {
 
 // GetWarningsOk returns a tuple with the Warnings field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Status) GetWarningsOk() ([]V0039Warning, bool) {
+func (o *Status) GetWarningsOk() ([]Dbv0039Warning, bool) {
 	if o == nil || IsNil(o.Warnings) {
 		return nil, false
 	}
@@ -135,8 +135,8 @@ func (o *Status) HasWarnings() bool {
 	return false
 }
 
-// SetWarnings gets a reference to the given []V0039Warning and assigns it to the Warnings field.
-func (o *Status) SetWarnings(v []V0039Warning) {
+// SetWarnings gets a reference to the given []Dbv0039Warning and assigns it to the Warnings field.
+func (o *Status) SetWarnings(v []Dbv0039Warning) {
 	o.Warnings = v
 }
 
