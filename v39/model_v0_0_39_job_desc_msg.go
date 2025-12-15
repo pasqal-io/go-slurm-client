@@ -50,7 +50,7 @@ type V0039JobDescMsg struct {
 	DelayBoot *int32 `json:"delay_boot,omitempty"`
 	Dependency *string `json:"dependency,omitempty"`
 	EndTime *int64 `json:"end_time,omitempty"`
-	Environment []string `json:"environment"`
+	Environment map[string]interface{} `json:"environment"`
 	ExcludedNodes []string `json:"excluded_nodes,omitempty"`
 	Extra *string `json:"extra,omitempty"`
 	Constraints *string `json:"constraints,omitempty"`
@@ -145,7 +145,7 @@ type _V0039JobDescMsg V0039JobDescMsg
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewV0039JobDescMsg(environment []string) *V0039JobDescMsg {
+func NewV0039JobDescMsg(environment map[string]interface{}) *V0039JobDescMsg {
 	this := V0039JobDescMsg{}
 	this.Environment = environment
 	return &this
@@ -1056,9 +1056,9 @@ func (o *V0039JobDescMsg) SetEndTime(v int64) {
 }
 
 // GetEnvironment returns the Environment field value
-func (o *V0039JobDescMsg) GetEnvironment() []string {
+func (o *V0039JobDescMsg) GetEnvironment() map[string]interface{} {
 	if o == nil {
-		var ret []string
+		var ret map[string]interface{}
 		return ret
 	}
 
@@ -1067,15 +1067,15 @@ func (o *V0039JobDescMsg) GetEnvironment() []string {
 
 // GetEnvironmentOk returns a tuple with the Environment field value
 // and a boolean to check if the value has been set.
-func (o *V0039JobDescMsg) GetEnvironmentOk() ([]string, bool) {
+func (o *V0039JobDescMsg) GetEnvironmentOk() (map[string]interface{}, bool) {
 	if o == nil {
-		return nil, false
+		return map[string]interface{}{}, false
 	}
 	return o.Environment, true
 }
 
 // SetEnvironment sets field value
-func (o *V0039JobDescMsg) SetEnvironment(v []string) {
+func (o *V0039JobDescMsg) SetEnvironment(v map[string]interface{}) {
 	o.Environment = v
 }
 
